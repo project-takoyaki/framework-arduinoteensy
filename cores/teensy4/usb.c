@@ -224,8 +224,8 @@ FLASHMEM __attribute__((noinline)) void _reboot_Teensyduino_(void)
 		*p = 0xEB120000;
 		((void (*)(volatile void *))(*(uint32_t *)(*(uint32_t *)0x0020001C + 8)))(p);
 	}
-	__builtin_unreachable();
 #endif
+	__builtin_unreachable();
 }
 
 
